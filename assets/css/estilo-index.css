@@ -1,0 +1,94 @@
+body {
+  font-family: "Open Sans", sans-serif;
+ 
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+
+#bodyIndex::before{
+  background:#040404 url("../img/N.jpg") no-repeat center center fixed;
+  background-size: cover;
+  content: "";
+  position: fixed;
+   left: 0;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
+}
+#portada{
+	height: 400px;
+	background: #CCC;
+filter:alpha(opacity=80); /* IE */
+-moz-opacity:0.8; /* Mozilla */
+opacity: 0.8; /* CSS3 */
+}
+
+#portada h1{
+	
+	margin-top: 50px;
+	 font-family: "Raleway", sans-serif;
+
+}
+
+
+
+.btn{
+	position: relative;
+	display: block;
+	color: white;
+	font-family: "montserrat";
+	text-decoration: none;
+	margin: 30px 0;
+	border: 2px solid  #18d26e;
+	padding: 14px 60px;
+	text-transform: uppercase;
+	overflow:hidden;
+	transition: 1s all ease;
+
+}
+.btn::before{
+	background:  #18d26e;
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absoulte;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	transition: all 0.6s ease;
+
+}
+
+.btn:hover{
+	background:   #18d26e;
+	
+}
+ h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.8);
+}
+ h2 span {
+  color: #18d26e;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 6px;
+}
+@media  (max-width: 764px) {
+	#portada{
+		height:600px;
+		
+	}
+	
+}
+@media  (max-width: 886px) {
+	
+	#sub{
+		color: #fff;
+		-webkit-text-stroke: 1px #18d26e;
+		border-bottom: 0px;
+		font-size: 24px;
+	}
+}
